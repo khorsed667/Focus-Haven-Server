@@ -109,8 +109,8 @@ async function run() {
         total_amount: req.body.price,
         currency: "USD",
         tran_id: trans_id,
-        success_url: `http://localhost:5000/payment/success/${trans_id}`,
-        fail_url: `http://localhost:5000/payment/fail/${trans_id}`,
+        success_url: `https://focus-haven-server.onrender.com/payment/success/${trans_id}`,
+        fail_url: `https://focus-haven-server.onrender.com/payment/fail/${trans_id}`,
         cancel_url: "http://localhost:3030/cancel",
         ipn_url: "http://localhost:3030/ipn",
         product_profile: "className", // Adjust this field as per your requirement
