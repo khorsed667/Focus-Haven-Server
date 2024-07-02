@@ -165,7 +165,7 @@ async function run() {
 
           if (classUpdateResult.modifiedCount && enrolledStudent.modifiedCount > 0) {
             res.redirect(
-              `http://localhost:5173/payment/success/${req.params.trans_id}`
+              `https://focus-haven-1.onrender.com/payment/success/${req.params.trans_id}`
             );
           }
         }
@@ -175,7 +175,7 @@ async function run() {
           transectionId: req.params.trans_id,
         });
         if (result.deletedCount > 0) {
-          res.redirect(`http://localhost:5173/payment/fail`);
+          res.redirect(`https://focus-haven-1.onrender.com/payment/fail`);
         }
       });
     });
